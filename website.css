@@ -300,9 +300,7 @@ span.radio_label{
 /* custom checkbox styles from: https://moderncss.dev/pure-css-custom-checkbox-style/ */
 
 
-input[type="text"].error, input[type="email"].error,{
-  border: 2px solid var(--pink);
-}
+
 
 #perferred{
   display: block;
