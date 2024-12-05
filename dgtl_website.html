@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>DGTL Photography</title>
+<link href="website.css" rel="stylesheet" type="text/css">
+<script src="website.js" defer></script>
+</head>
+<body> 
+	<button id="clickme" onclick="toggleImage(); toggleMode();">
+		<img src="light_mode.png" id="image" alt="light/dark mode" width="30px">
+	</button>
+<header>
+        <img src="Untitled-1.jpg" alt="logo" width="500">
+        <h1><small>Photographer based in Arizona</small></h1>
+            <nav>
+                <b>
+                    <a href="dgtl_website.html">Home</a> &nbsp;
+                    <a href="#switcher1">Gallary</a> &nbsp;
+                    <a href="#game1">Game</a> &nbsp;
+                    <a href="#contact">Contact</a> &nbsp;
+                </b>
+</header>
+	<main id="main">
+		<section id="switcher1">
+		<h2>Favorite Photographs</h2>
+		<section id="product1" class="currentItem">
+			<h3>Killua Cosplay</h3>
+			<img src="_DSC9118 copy.jpg" alt="Killue cosplay" width="500">
+			<p>Thgis was shoot late septabmer at a cosplay event gopin gon dowtone phoenix</p>
+		</section>
+		<section id="product2" class="hiddenItem">
+			<h3>Heading Describing Item 2</h3>
+			<img src="_DSC2474-Edit copy.jpg" alt="Cousin's 15th birthday" width="500">
+			<p>This was shoot in during sunset and th eco,or looks mazin g</p>
+		</section>
+		<section id="product3" class="hiddenItem">
+			<h3>Heading Describing Item 3</h3>
+			<img src="_DSC5803 copy.jpg" alt="Firefall Yosemite" width="500">
+			<p>Paragraph describing item (or list or whatever makes the most semantic sense). Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		</section>
+		<section id="switcherButtons">
+			<h2 class="sr-only">Click on a Button to View a Product</h2>
+			<button  id="btn1">View Item 1</button>
+			<button  id="btn2">View Item 2</button>
+			<button  id="btn3">View Item 3</button>
+		</section>
+			
+	</section>
+		<section id="game1">
+		<div>
+			<h2>Guessing Game Example 1</h2>
+			<form>
+				<label for="numGuess">Enter a Number Between 1 and 10:</label>
+				<span class="message">Please enter a number from 1 to 10</span>
+				<input type="number" name="numGuess" id="numGuess">
+				<input type="submit" name="guessGame" id="guessGame" value="Play the Game!">
+			</form>
+			<section id="gameDisplay">
+				<h3>Guess a Number!</h3>
+				<p>Enter a number between 1 and 10 in the box to the left and click the button to play. If your number matches, you win!</p>
+				<div id="gameOutput"></div>
+			</section>
+		</div>
+		</section>
+		
+		<section id="contact">
+  <h2>Contact Me</h2>
+
+  <form id="newAcct" action="https://wp.zybooks.com/form-viewer.php" target="_blank" method="POST">
+    <label for="fullName">Full Name:<span class="required">*</span></label>
+    <input type="text" name="fullName" id="fullName"><p class="hidden">Please enter proper name.</p>
+
+    <label for="emailAdd">Email Address:<span class="required">*</span></label>
+    <input type="email" name="emailAdd" id="emailAdd">
+    <p class="hidden">Please enter a valid email address</p>
+
+    <label for="phoneNum">Phone Number:<span class="required">*</span></label>
+    <input type="text" name="phoneNum" id="phoneNum">
+    <p class="hidden">Please enter a valid phone umber</p>
+
+    <fieldset>
+      <legend>Perferred Method Of Contact: <span class="required">*</span></legend>
+      <label for="phone" class="radio">
+        <span class="radio_input">
+          <input type="radio" name="contact" id="phone" value="phone" required checked>
+          <span class="radio_control"></span>
+        </span>
+        <span class="radio_label">Phone</span>
+      </label>
+      <label for="email" class="radio">
+        <span class="radio_input">
+          <input type="radio" name="contact" id="email" value="email">
+          <span class="radio_control"></span>
+         </span>
+         <span class="radio_label">Email</span>
+      </label>
+    </fieldset>
+    <p id="perferred" class="hidden"></p>
+    
+    <label for="message">Message<span class="required">*</span></label>
+    <p class="hidden">Please add a message</p>
+    <textarea id="message"></textArea>
+    
+    <input type="submit" id="mySubmit">
+  </form>
+  <p id="confirm" class="hidden"></p>
+</section>
+			
+</main>
+<footer>
+    <small>Copyright &copy; 2024 All rights reserved</small>
+</footer>
+           
+</body>
+
+</html>
